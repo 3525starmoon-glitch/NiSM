@@ -1,0 +1,50 @@
+{
+  "model": "PiMForce (Dense)",
+  "reference_environment": {
+    "cpu": "Intel Xeon Gold 6138 @ 2.00 GHz",
+    "gpu": "NVIDIA A800 (80 GB)",
+    "python": "3.9",
+    "pytorch": "2.5.1"
+  },
+  "modalities": [
+    "8-channel EMG",
+    "3D hand posture"
+  ],
+  "pose_backbone": "3D ResNet",
+  "pose_block_layout": [
+    3,
+    4,
+    6,
+    3
+  ],
+  "pose_grid": [
+    21,
+    48,
+    48,
+    48
+  ],
+  "pose_embedding": 512,
+  "emg_embedding": 512,
+  "fusion_hidden": [
+    256,
+    256
+  ],
+  "fusion_activation": "ReLU",
+  "fusion_batch_normalization": "after every MLP projection",
+  "force_levels": 4,
+  "output_frames": 32,
+  "stft_window": 256,
+  "stft_hop": 32,
+  "stft_frequencies": 64,
+  "optimizer": "Adam",
+  "learning_rate": 0.0001,
+  "batch_size": 64,
+  "max_epochs": 100,
+  "loss": "MAE",
+  "scheduler": "ReduceLROnPlateau",
+  "scheduler_factor": 0.2,
+  "scheduler_patience": 3,
+  "early_stopping_patience": 15,
+  "normalization": "MinMax fitted on the training users",
+  "paper_parameter_label": "66.39M"
+}

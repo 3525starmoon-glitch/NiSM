@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+logs/
+outputs/
+results/
+*.pt
+*.pth
+*.npz
+*.npy
+data/
+cache/
+rotation/rotation_exp/
+rotation/logs/
+*.log

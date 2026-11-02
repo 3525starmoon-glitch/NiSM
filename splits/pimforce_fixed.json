@@ -1,0 +1,11 @@
+{
+  "dataset": "pimforce",
+  "protocol": "fixed",
+  "train_users": ["User1", "User2", "User3", "User5", "User6", "User7", "User8", "User10", "User11", "User12", "User13", "User14", "User16", "User17", "User18", "User19", "User21"],
+  "validation_users": [],
+  "test_users": ["User4", "User9", "User15", "User20"],
+  "checkpoint_selection": "final_epoch",
+  "training_sessions": [1],
+  "test_sessions": [1, 2, 3],
+  "training_sample_fraction": 0.5
+}

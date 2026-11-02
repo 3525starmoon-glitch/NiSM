@@ -1,0 +1,13 @@
+# Reference software: Python 3.9 and PyTorch 2.5.1 (see README for the hardware of each experiment).
+name: nism
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=2.5.1
+  - pytorch-cuda=12.1
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.1
